@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">TicTacToe</string>
+    <string name="app_name">TicTacToe Game</string>
+    <string name="title_activity__3_by_3_board">_3_by_3_board</string>
 </resources>

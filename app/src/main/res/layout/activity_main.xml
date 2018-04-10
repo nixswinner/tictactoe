@@ -1,18 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tergech.nix.tictactoe.MainActivity">
-
+    android:orientation="vertical">
     <TextView
-        android:layout_width="wrap_content"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:shadowColor="#00ccff"
+        android:shadowRadius="2"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:text="TicTacToe"
+        android:fontFamily="monospace"
+        android:textSize="50dp"
+        android:textStyle="italic"
 
-</android.support.constraint.ConstraintLayout>
+        />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="Choose the Board Type"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/three"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="3X3"
+        android:textSize="100sp"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/five"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="5X5"
+        android:textSize="100sp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/exit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="EXIT"
+        android:textStyle="italic"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
